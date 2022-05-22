@@ -1,0 +1,27 @@
+.content{
+  margin-top: 2rem;
+}
+
+.navbar{
+  background-color: rgb(72, 155, 72);
+  box-shadow: 0 4px 2px -2px rgb(72, 155, 72);
+  height: 5rem;
+  font-size: 20px;
+  font-weight: 600;
+
+.nav-item{
+  .nav-link{
+    color: #fff;
+    width: 8rem;
+    &:hover{
+     text-decoration: green;
+    }
+    .active{
+      color: green;
+    }
+  }
+}
+  .container{
+
+  }
+}

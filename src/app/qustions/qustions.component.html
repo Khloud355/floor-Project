@@ -1,0 +1,21 @@
+ <div class="qustion-content">
+   <div class="container">
+     <div *ngFor="let data of questions">
+    <button type="button" class="collapsible" (click)="showText(data.id)">
+      <span class="question">
+        {{data?.question}}
+      </span> <span class="icon" *ngIf="!showTextFlag">
++
+      </span>
+    <span class="icon" *ngIf="showTextFlag">
+      -
+            </span>
+    </button>
+    <div class="content" *ngIf="showTextFlag &&data.id">
+      <p>{{answer.answer}}</p>
+    </div>
+  </div>
+   </div>
+ </div>
+
+

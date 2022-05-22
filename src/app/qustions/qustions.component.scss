@@ -1,0 +1,31 @@
+.qustion-content{
+  text-align: center;
+button{
+  width: 70%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 4rem;
+border: none;
+padding: 1rem;
+margin-top: 1rem;
+color: green;
+font-weight: 600;
+font-size: 20px;
+.icon{
+  font-size: 30px;
+}
+}
+.content{
+  transition: all linear 1s;
+  width: 70%;
+  text-align: initial;
+  padding: 1rem;
+  border-top: 1px solid green;
+  background-color: #eee;
+  p{
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+}

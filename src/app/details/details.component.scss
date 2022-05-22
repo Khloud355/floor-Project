@@ -1,0 +1,22 @@
+.floor-details{
+  h3{
+    color: rgb(72, 155, 72);
+  }
+  .details-contents{
+    margin-top: 2rem;
+    .details{
+      margin-top: 1rem;
+    }
+    .queston{
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .answer{
+      font-size: 17px;
+      font-weight: 600;
+      margin-right: 1.5rem;
+      color: green;
+      // border-bottom: 1px solid green;
+    }
+  }
+}

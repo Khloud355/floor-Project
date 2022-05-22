@@ -1,0 +1,42 @@
+::ng-deep p-carousel{
+.p-carousel-item{
+.carsoul-content{
+  background-size: cover;
+  height: 30rem;
+  background-repeat: no-repeat;
+}
+}}
+.home-section{
+  .image{
+
+    background-image: url("../../assets/floor.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30rem;
+    background-size: cover;
+  }
+  .table-content{
+    margin-top: 5rem;
+    .table > :not(caption) > * > * {
+      padding: 1.5rem 0.5rem;
+      font-size: 17px;
+      font-weight: 600;
+  }
+  tr:nth-child(even) {
+    background-color: rgb(144, 238, 144);
+  }
+    tr{
+      height: 5rem;
+    }
+td{
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+    .header{
+      background-color: rgb(72, 155, 72);
+      color: #fff;
+    }
+  }
+}

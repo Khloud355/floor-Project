@@ -1,0 +1,48 @@
+<div class="home-section">
+  <div class="container">
+    <div class="image">
+      <!-- <p-carousel
+
+      [value]="attributes"
+      [autoplayInterval]="3000"
+      [circular]="true"
+      [numVisible]="1"
+      [numScroll]="1"
+      [showIndicators]="true"
+      [class.prev-hidden]="navigatorPage === 0"
+      [class.next-hidden]="navigatorPage === 1"
+      contentClass="carousel-content"
+      styleClass="carousel"
+      [showNavigators]="attributes.length > 2"
+      (onPage)="onNavigateCarousel($event)"
+    >
+      <ng-template let-attribute pTemplate="item">
+        <div class="carsoul-content"
+         [ngStyle]="{ 'background-image': 'url(' + attribute.img + ')' }"></div>
+
+      </ng-template>
+    </p-carousel> -->
+
+  </div>
+  <div class="table-content">
+    <table class="table">
+      <thead>
+        <tr class="header">
+          <td scope="col">
+           <span>مساحة القطعة بالمتر</span></td>
+          <td scope="col"><span>حوض رقم</span></td>
+          <td scope="col"><span>سعر المتر بالجنيه المصري</span></td>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr *ngFor="let data of floorData" (click)="floorDetails(data.id)">
+          <td scope="row">{{data.distance}}</td>
+          <td>{{data.basin_number}}</td>
+          <td>{{data.price}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
