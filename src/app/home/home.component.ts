@@ -23,10 +23,11 @@ export class HomeComponent implements OnInit {
   ]
   navigatorPage: number = 0;
   floorData = [
-    { "id": '1', "distance": '2290', "basin_number": '2', "price": '2900' },
-    { "id": '2', "distance": '10500', "basin_number": '18', "price": '2600' },
-    { "id": '3', "distance": '2293', "basin_number": '20', "price": '2999' },
-    { "id": '4', "distance": '2293', "basin_number": '20', "price": '2999' }
+    { "id": '1', "space": '2290', "basin": '2', "price": '2900' },
+    { "id": '2', "space": '10500', "basin": '18', "price": '2600' },
+    { "id": '3', "space": '2293', "basin": '20', "price": '2999' },
+    { "id": '4', "space": '2293', "basin": '20', "price": '2999' },
+    { "id": '5', "space": '5250', "basin": '20', "price": '2999' }
   ]
   constructor(private router: Router) { }
 
