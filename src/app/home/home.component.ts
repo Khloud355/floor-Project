@@ -28,9 +28,40 @@ export class HomeComponent implements OnInit {
     { "id": '3', "distance": '2293', "basin_number": '20', "price": '2999' },
     { "id": '4', "distance": '2293', "basin_number": '20', "price": '2999' }
   ]
+  price: any;
+  array: any=[];
+  lowestToHighest: any;
+  sortedarray: any;
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    for(let data of this.floorData){
+    this.array.push(data.price)
+    }
+this.sortArray(this.array)
+  }
+   sortArray(array:any) {
+    var temp = 0;
+    for (var i = 0; i < array.length; i++) {
+      for (var j = i; j < array.length; j++) {
+        if (array[j] < array[i]) {
+          temp = array[j];
+          array[j] = array[i];
+          array[i] = temp;
+        }
+      }
+    }
+
+    this.sortedarray=array
+    console.log(this.sortedarray)
+    return array;
+  }
+
+
+
+  sortByPrice(){
+
+    console.log( this.array.sort())
   }
   floorDetails(id: any) {
     this.router.navigate(['floor-details/', id]);

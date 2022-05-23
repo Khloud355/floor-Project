@@ -9,6 +9,7 @@ import { DetailsComponent } from './details/details.component';
 import {PanelModule} from 'primeng/panel';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CarouselModule } from "primeng/carousel";
+import {AccordionModule} from 'primeng/accordion';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,8 +22,8 @@ import { CarouselModule } from "primeng/carousel";
     AppRoutingModule,
     PanelModule,
     BrowserAnimationsModule,
-    CarouselModule
-
+    CarouselModule,
+    AccordionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
