@@ -6,6 +6,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  priceAsc: any
+  distanceAsc: any
   attributes = [
 
     {
@@ -29,18 +31,20 @@ export class HomeComponent implements OnInit {
     { "id": '4', "distance": '2293', "basin_number": '20', "price": '2999' }
   ]
   price: any;
-  array: any=[];
+  array: any = [];
   lowestToHighest: any;
   sortedarray: any;
   constructor(private router: Router) { }
 
   ngOnInit(): void {
-    for(let data of this.floorData){
-    this.array.push(data.price)
-    }
-this.sortArray(this.array)
+
+    console.log(this.floorData)
+    // for (let data of this.floorData) {
+    //   this.array.push(data.price)
+    // }
+    // this.sortArray(this.array)
   }
-   sortArray(array:any) {
+  sortArray(array: any) {
     var temp = 0;
     for (var i = 0; i < array.length; i++) {
       for (var j = i; j < array.length; j++) {
@@ -52,16 +56,39 @@ this.sortArray(this.array)
       }
     }
 
-    this.sortedarray=array
+    this.sortedarray = array
     console.log(this.sortedarray)
     return array;
   }
 
 
 
-  sortByPrice(){
+  sortByPrice() {
+    if(this.priceAsc == true) {
+      this.floorData.sort(function (a, b) {
+        return Number(b['price']) - Number(a['price']);
+      });
+    } else {
+      this.floorData.sort(function (a, b) {
+        return Number(a['price']) - Number(b['price']);
+      });
+      this.priceAsc = false
+    }
+    this.priceAsc = !this.priceAsc
 
-    console.log( this.array.sort())
+  }
+  sortBydistance() {
+    if(this.distanceAsc == true) {
+      this.floorData.sort(function (a, b) {
+        return Number(b['distance']) - Number(a['distance']);
+      });
+    } else {
+      this.floorData.sort(function (a, b) {
+        return Number(a['distance']) - Number(b['distance']);
+      });
+      this.distanceAsc = false
+    }
+    this.distanceAsc = !this.distanceAsc
   }
   floorDetails(id: any) {
     this.router.navigate(['floor-details/', id]);
