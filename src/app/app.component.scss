@@ -1,3 +1,13 @@
+.collapse:not(.show){
+  display: block;
+  ul{
+    display: flex;
+    flex-direction: inherit;
+    li{
+
+    }
+  }
+}
 .content{
   margin-top: 2rem;
 }
@@ -13,6 +23,10 @@
   .nav-link{
     color: #fff;
     width: 8rem;
+    @media(max-width:768px){
+      font-size: 13px;
+      width: 5rem;
+    }
     &:hover{
      text-decoration: green;
     }
@@ -24,4 +38,14 @@
   .container{
 
   }
+}
+.footer{
+  // height: 4rem;
+  background-color: #eee;
+  background-color: #eee;
+  color: green;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 2rem;
+  text-align: center;
 }

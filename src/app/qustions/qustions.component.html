@@ -1,20 +1,20 @@
- <div class="qustion-content">
+ <div class="qustions">
    <div class="container">
-     <div *ngFor="let data of questions">
-    <button type="button" class="collapsible" (click)="showText(data.id)">
-      <span class="question">
-        {{data?.question}}
-      </span> <span class="icon" *ngIf="!showTextFlag">
-+
-      </span>
-    <span class="icon" *ngIf="showTextFlag">
-      -
-            </span>
-    </button>
-    <div class="content" *ngIf="showTextFlag &&data.id">
-      <p>{{answer.answer}}</p>
-    </div>
-  </div>
+    <p-accordion>
+      <p-accordionTab *ngFor="let question of questions">
+        <ng-template pTemplate="header" >
+          <div (click)="show()" style="width: 64rem;display: flex;align-items: center;justify-content: space-between;">
+          <div> {{question.question}}</div>
+         <div *ngIf="showPlus" style="font-size: 30px;">+</div>
+         <div *ngIf="!showPlus" style="font-size: 30px;">-</div>
+        </div>
+        </ng-template>
+
+        <div class="answer">
+          {{question.answer}}
+        </div>
+      </p-accordionTab>
+    </p-accordion>
    </div>
  </div>
 

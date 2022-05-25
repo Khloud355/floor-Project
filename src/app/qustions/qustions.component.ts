@@ -9,19 +9,32 @@ export class QustionsComponent implements OnInit {
   showTextFlag=false
   answer: any;
   answers: any;
+  showPlus=true
   constructor() { }
 questions=[
   {
-    "question":"ماهي مساحة الحزام الأخضر 6 أكتوبر؟", "id":"1"
+    "question":"ماهي مساحة الحزام الأخضر 6 أكتوبر؟", "id":"1","answer":" فدان1234567 "
   },
   {
-    "question":"تسلسل ملكية اراضى الحزام الاخضر 6 أكتوبر؟", "id":"2"
+    "question":"تسلسل ملكية اراضى الحزام الاخضر 6 أكتوبر؟", "id":"2","answer":" فدان1220567 "
+  },
+  {
+    "question":"ماهي مساحة الحزام الأخضر 6 أكتوبر؟", "id":"1","answer":" فدان1234567 "
+  },
+  {
+    "question":"تسلسل ملكية اراضى الحزام الاخضر 6 أكتوبر؟", "id":"2","answer":" فدان1220567 "
   },
   {
     "question":"ما هى جهة الولاية المختصة باراضى منطقة الحزام الاخضر 6 أكتوبر؟", "id":"3"
   },
 ]
-
+activeState: boolean[] = [true, false, false];
+show(){
+  this.showPlus=!this.showPlus
+}
+toggle(index: number) {
+    this.activeState[index] = !this.activeState[index];
+}
 
   ngOnInit(): void {
     this.answers={
@@ -32,7 +45,8 @@ questions=[
   }
   showText(id:any){
     this.answer=this.answers[id]
-    this.answer=this.answer[0]
+
+    // this.answer=this.answer[0]
 this.showTextFlag= !this.showTextFlag
   }
 
