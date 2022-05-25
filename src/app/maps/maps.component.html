@@ -1,0 +1,23 @@
+<div class="maps">
+  <div class="container">
+    <p-carousel
+    [value]="images"
+    [numVisible]="1"
+    [numScroll]="1"
+    [showIndicators]="true"
+    [class.prev-hidden]="navigatorPage === 0"
+    [class.next-hidden]="navigatorPage === 1"
+    contentClass="carousel-content"
+    styleClass="carousel"
+    [showNavigators]="images.length > 2"
+    (onPage)="onNavigateCarousel($event)"
+  >
+    <ng-template let-attribute pTemplate="item">
+      <div
+      class="carsoul-content"
+      [ngStyle]="{ 'background-image': 'url(' + attribute.img + ')' }"
+    ></div>
+    </ng-template>
+  </p-carousel>
+  </div>
+</div>

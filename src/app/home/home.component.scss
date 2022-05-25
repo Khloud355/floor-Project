@@ -1,12 +1,20 @@
 ::ng-deep p-carousel{
+.p-link{
+  padding: 5px;
+  border: 1px;
+  background-color: green;
+}
 .p-carousel-item{
 .carsoul-content{
   background-size: cover;
-  height: 30rem;
+  height: 15rem;
   background-repeat: no-repeat;
 }
-}}
+}
+}
 .home-section{
+  padding: 3rem 0;
+
   .image{
 
     background-image: url("../../assets/floor.jpeg");
@@ -15,28 +23,5 @@
     height: 30rem;
     background-size: cover;
   }
-  .table-content{
-    margin-top: 5rem;
-    .table > :not(caption) > * > * {
-      padding: 1.5rem 0.5rem;
-      font-size: 17px;
-      font-weight: 600;
-  }
-  tr:nth-child(even) {
-    background-color: #eee;
-  }
-    tr{
-      height: 5rem;
-    }
-td{
-  text-align: center;
-  cursor: pointer;
-  margin-bottom: 1rem;
-}
 
-    .header{
-      background-color: rgb(77, 173, 77);
-      color: #fff;
-    }
-  }
 }

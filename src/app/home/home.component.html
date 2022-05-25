@@ -1,26 +1,37 @@
 <div class="home-section">
   <div class="container">
-    <div class="image">
-  </div>
-  <div class="table-content">
-    <table class="table">
-      <thead>
-        <tr class="header">
-          <td scope="col" (click)="sortBydistance()">
-           <span>مساحة القطعة بالمتر</span></td>
-          <td scope="col"><span>حوض رقم</span></td>
-          <td scope="col" (click)="sortByPrice()"><span>سعر المتر بالجنيه المصري</span></td>
-        </tr>
-      </thead>
-      <tbody>
+   <div class="row">
+     <div class="col-md-6 col-sm-12" style=" font-weight: 600;">
+      <span style="color: green; font-size: 14px;">  الحزام الأخضر مدينة 6 أكتوبر</span>
+      تم بناء هذه الصفحة كخدمة لملاك و مستثمرى منطقة الحزام الاخضر مدينة ٦ اكتوبر
+      و تشمل اهم المعلومات و القرارات المتعلقة بالمنطقة و كذا عروض بيع اراضى مباشرة من الملاك دون وسطاء
+      تم تخطيط منطقة الحزام الأخضر بقرار من هيئة المجتمعات العمرانية الجديدة عام 1992
+      على مساحة 17 ألف فدان تمتد بطول مدينة أكتوبر من طريق مصر- الإسكندرية الصحراوى مقابل مشروع «بفرلى هيلز» على طريق وصلة دهشور، وحتى طريق الواحات البحرية، وتحيط بكردون المدينة، وقد تم تقسيم مساحة الحزام إلى قطع، مساحة كل قطعة 5 أفدنة، وتقع على طرق رئيسية وفرعية تشمل حرماً للطرق، بحيث يسهل إدخال المرافق إلى جميع القطع
+       1995 تعاقدت شركة 6 أكتوبر الزراعية لاستصلاح وتعمير وتنمية الاراضى مع هيئة المجتمعات العمرانية لشراء مساحة  فدان15614
+      و قامت الشركة بمد المرافق و اعمال البنية التحتية …
+     </div>
+     <div class="col-md-6 col-sm-12">
+      <p-carousel
+      [value]="images"
+      [numVisible]="1"
+      [numScroll]="1"
+      [showIndicators]="true"
+      [class.prev-hidden]="navigatorPage === 0"
+      [class.next-hidden]="navigatorPage === 1"
+      contentClass="carousel-content"
+      styleClass="carousel"
+      [showNavigators]="images.length > 2"
+      (onPage)="onNavigateCarousel($event)"
+    >
+      <ng-template let-attribute pTemplate="item">
+        <div
+        class="carsoul-content"
+        [ngStyle]="{ 'background-image': 'url(' + attribute.img + ')' }"
+      ></div>
+      </ng-template>
+    </p-carousel>
+     </div>
+   </div>
 
-        <tr *ngFor="let data of floorData" (click)="floorDetails(data.id)">
-          <td scope="row">{{data.distance}}</td>
-          <td>{{data.basin_number}}</td>
-          <td>{{data.price}}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
 </div>
 </div>

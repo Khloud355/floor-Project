@@ -10,12 +10,18 @@ import {PanelModule} from 'primeng/panel';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CarouselModule } from "primeng/carousel";
 import {AccordionModule} from 'primeng/accordion';
+import { LandForSaleComponent } from './land-for-sale/land-for-sale.component';
+import { MapsComponent } from './maps/maps.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     QustionsComponent,
-    DetailsComponent
+    DetailsComponent,
+    LandForSaleComponent,
+    MapsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
