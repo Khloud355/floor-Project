@@ -12,10 +12,37 @@ export class QustionsComponent implements OnInit {
   showPlus: any
   index: number = 0;
   constructor() { }
+<<<<<<< HEAD
   questions = [
     {
       "question": "ماهي مساحة الحزام الأخضر 6 أكتوبر؟", "id": "1", "answer": " فدان1234567 ",
       "plusIcon": "fa-solid fa-plus", "munsIcon": "fa-solid fa-minus"
+=======
+questions=[
+  {
+    "question":"ماهي مساحة الحزام الأخضر 6 أكتوبر؟", "id":"1","answer":" فدان1234567 "
+  },
+  {
+    "question":"تسلسل ملكية اراضى الحزام الاخضر 6 أكتوبر؟", "id":"2","answer":" فدان1220567 "
+  },
+  {
+    "question":"ماهي مساحة الحزام الأخضر 6 أكتوبر؟", "id":"1","answer":" فدان1234567 "
+  },
+  {
+    "question":"تسلسل ملكية اراضى الحزام الاخضر 6 أكتوبر؟", "id":"2","answer":" فدان1220567 "
+  },
+  {
+    "question":"ما هى جهة الولاية المختصة باراضى منطقة الحزام الاخضر 6 أكتوبر؟", "id":"3"
+  },
+]
+activeState: boolean[] = [true, false, false];
+show(){
+  this.showPlus=!this.showPlus
+}
+toggle(index: number) {
+    this.activeState[index] = !this.activeState[index];
+}
+>>>>>>> eaa75e9206fcae5b7b60a15c38af8a6c4365f71c
 
     },
     {
@@ -54,7 +81,15 @@ export class QustionsComponent implements OnInit {
     this.activeState[index] = !this.activeState[index];
   }
   ngOnInit(): void {
+<<<<<<< HEAD
     // this.showPlus=true
+=======
+    this.answers={
+      1:[{"answer":" فدان1234567 "}],
+      2:[{"answer":"1234567"}],
+      3:[{"answer":"جهاز مدينة ٦ أكتوبر هيئة المجتمعات العمرانية الجديدة"}]
+    }
+>>>>>>> eaa75e9206fcae5b7b60a15c38af8a6c4365f71c
   }
   showText(id: any) {
     this.answer = this.answers[id]
