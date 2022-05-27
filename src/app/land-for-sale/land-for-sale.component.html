@@ -4,32 +4,48 @@
       <table class="table">
         <thead>
           <tr class="header">
-            <td scope="col"
-           >
-             <span>
-               <span (click)="sortBydistancesmall()" >
-              <i class="fas fa-angle-down fa-fw" style="color: var(--fa-navy);"></i></span>
-              <span (click)="sortBydistance()">
-              <i class="fas fa-angle-up fa-fw" style="color: var(--fa-navy);" ></i></span>
-            </span>
-              <span> مساحة القطعة بالمتر </span></td>
+            <td scope="col">
+              <span>
+                <span (click)="sortBydistancesmall()">
+                  <i
+                    class="fas fa-angle-down fa-fw"
+                    style="color: var(--fa-navy)"
+                  ></i
+                ></span>
+                <span (click)="sortBydistance()">
+                  <i
+                    class="fas fa-angle-up fa-fw"
+                    style="color: var(--fa-navy)"
+                  ></i
+                ></span>
+              </span>
+              <span> مساحة القطعة بالمتر </span>
+            </td>
             <td scope="col"><span>حوض رقم</span></td>
             <td scope="col">
               <span>
-                <span (click)="sortByPricesmall()" >
-               <i class="fas fa-angle-down fa-fw" style="color: var(--fa-navy);"></i></span>
-               <span (click)="sortByPrice()">
-               <i class="fas fa-angle-up fa-fw" style="color: var(--fa-navy);" ></i></span>
-             </span>
-             سعر المتر بالجنيه المصري</td>
+                <span (click)="sortByPricesmall()">
+                  <i
+                    class="fas fa-angle-down fa-fw"
+                    style="color: var(--fa-navy)"
+                  ></i
+                ></span>
+                <span (click)="sortByPrice()">
+                  <i
+                    class="fas fa-angle-up fa-fw"
+                    style="color: var(--fa-navy)"
+                  ></i
+                ></span>
+              </span>
+              سعر المتر بالجنيه المصري
+            </td>
           </tr>
         </thead>
         <tbody>
-
           <tr *ngFor="let data of floorData" (click)="floorDetails(data.id)">
-            <td scope="row">{{data.distance}}</td>
-            <td>{{data.basin_number}}</td>
-            <td>{{data.price}}</td>
+            <td scope="row">{{ data.distance }}</td>
+            <td>{{ data.basin_number }}</td>
+            <td>{{ data.price }}</td>
           </tr>
         </tbody>
       </table>

@@ -1,5 +1,6 @@
 ::ng-deep p-accordion{
  .p-accordion-tab {
+   border-radius: 10px;
     background-color: #eee;
     padding: 1.5rem;
     margin: 1rem;
@@ -8,11 +9,14 @@ font-size: 20px;
 a{
   color: green;
   font-weight: 600;
+
 }
     }
   }
 }
 .qustions{
+  margin-bottom: 8rem;
+  margin-top: 5rem;
   .question-content{
     display: flex;
     align-items: center;
@@ -23,7 +27,6 @@ a{
   }
   .answer{
     margin-top: 2rem;
-    border-top: 1px solid green;
     color: #111;
     font-size: 20px;
   }

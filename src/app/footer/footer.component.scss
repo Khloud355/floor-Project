@@ -1,0 +1,29 @@
+.footer{
+  // height: 4rem;
+  // margin-top: 3rem;
+  // background-color: #eee;
+  background-color: #eee;
+  color: green;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 5rem 2rem 1rem;
+
+  text-align: center;
+  .warn{
+    font-weight: 700;
+  }
+  .uses{
+    ul{
+      list-style: none;
+      display: flex;
+      justify-content: end;
+      li{
+        margin: 1rem;
+a{
+  text-decoration: none;
+  color: #111;
+}}
+    }
+  }
+
+}

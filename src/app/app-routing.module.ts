@@ -8,11 +8,10 @@ import { QustionsComponent } from './qustions/qustions.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-{ path: 'Qusetions', component: QustionsComponent },
-{path: 'floor-details/:id', component: DetailsComponent},
-{path:'landForSale', component:LandForSaleComponent},
-
-{path:"maps",component:MapsComponent}
+  { path: 'Qusetions', component: QustionsComponent },
+  { path: 'floor-details/:id', component: DetailsComponent },
+  { path: 'landForSale', component: LandForSaleComponent },
+  { path: "maps", component: MapsComponent }
 ]
 
 @NgModule({

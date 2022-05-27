@@ -1,37 +1,62 @@
 <div class="home-section">
   <div class="container">
-   <div class="row">
-     <div class="col-md-6 col-sm-12" style=" font-weight: 600;">
-      <span style="color: green; font-size: 14px;">  الحزام الأخضر مدينة 6 أكتوبر</span>
-      تم بناء هذه الصفحة كخدمة لملاك و مستثمرى منطقة الحزام الاخضر مدينة ٦ اكتوبر
-      و تشمل اهم المعلومات و القرارات المتعلقة بالمنطقة و كذا عروض بيع اراضى مباشرة من الملاك دون وسطاء
-      تم تخطيط منطقة الحزام الأخضر بقرار من هيئة المجتمعات العمرانية الجديدة عام 1992
-      على مساحة 17 ألف فدان تمتد بطول مدينة أكتوبر من طريق مصر- الإسكندرية الصحراوى مقابل مشروع «بفرلى هيلز» على طريق وصلة دهشور، وحتى طريق الواحات البحرية، وتحيط بكردون المدينة، وقد تم تقسيم مساحة الحزام إلى قطع، مساحة كل قطعة 5 أفدنة، وتقع على طرق رئيسية وفرعية تشمل حرماً للطرق، بحيث يسهل إدخال المرافق إلى جميع القطع
-       1995 تعاقدت شركة 6 أكتوبر الزراعية لاستصلاح وتعمير وتنمية الاراضى مع هيئة المجتمعات العمرانية لشراء مساحة  فدان15614
-      و قامت الشركة بمد المرافق و اعمال البنية التحتية …
-     </div>
-     <div class="col-md-6 col-sm-12">
-      <p-carousel
-      [value]="images"
-      [numVisible]="1"
-      [numScroll]="1"
-      [showIndicators]="true"
-      [class.prev-hidden]="navigatorPage === 0"
-      [class.next-hidden]="navigatorPage === 1"
-      contentClass="carousel-content"
-      styleClass="carousel"
-      [showNavigators]="images.length > 2"
-      (onPage)="onNavigateCarousel($event)"
-    >
-      <ng-template let-attribute pTemplate="item">
+    <div class="home-content">
+      <div class="text" style="font-weight: 600">
+        <span style="color: green; font-size: 14px">
+          الحزام الأخضر مدينة 6 أكتوبر</span
+        >
+        تم بناء هذه الصفحة كخدمة لملاك و مستثمرى منطقة الحزام الاخضر مدينة ٦
+        اكتوبر و تشمل اهم المعلومات و القرارات المتعلقة بالمنطقة و كذا عروض بيع
+        اراضى مباشرة من الملاك دون وسطاء تم تخطيط منطقة الحزام الأخضر بقرار من
+        هيئة المجتمعات العمرانية الجديدة عام 1992 على مساحة 17 ألف فدان تمتد
+        بطول مدينة أكتوبر من طريق مصر- الإسكندرية الصحراوى مقابل مشروع «بفرلى
+        هيلز» على طريق وصلة دهشور، وحتى طريق الواحات البحرية، وتحيط بكردون
+        المدينة، وقد تم تقسيم مساحة الحزام إلى قطع، مساحة كل قطعة 5 أفدنة، وتقع
+        على طرق رئيسية وفرعية تشمل حرماً للطرق، بحيث يسهل إدخال المرافق إلى جميع
+        القطع 1995 تعاقدت شركة 6 أكتوبر الزراعية لاستصلاح وتعمير وتنمية الاراضى
+        مع هيئة المجتمعات العمرانية لشراء مساحة فدان15614 و قامت الشركة بمد
+        المرافق و اعمال البنية التحتية …
+      </div>
+      <div class="home-carsouel">
         <div
-        class="carsoul-content"
-        [ngStyle]="{ 'background-image': 'url(' + attribute.img + ')' }"
-      ></div>
-      </ng-template>
-    </p-carousel>
-     </div>
-   </div>
-
-</div>
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg> -->
+              <img src="../../assets/images.jpg" alt="" />
+            </div>
+            <div class="carousel-item">
+              <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg> -->
+              <img src="../../assets/floor.jpeg" alt="" />
+            </div>
+            <div class="carousel-item">
+              <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg> -->
+              <img src="../../assets/download1.jpg" alt="" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
