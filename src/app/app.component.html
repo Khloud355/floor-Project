@@ -1,18 +1,21 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="logo">
+        <img src="../assets/Logo_EGYCASA_4.svg" alt="">
+      </div>
       <ul class="navbar-nav mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page"  routerLinkActive="active" routerLink="/">الرئيسية</a>
+          <a class="nav-link main" aria-current="page" routerLink="/">الرئيسية</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" routerLink="landForSale">أراضي للبيع</a>
+          <a class="nav-link diff" [routerLinkActive]="'active'" routerLink="landForSale">أراضي للبيع</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" routerLink="Qusetions">أسئلة متكررة</a>
+          <a class="nav-link diff" [routerLinkActive]="'active'" routerLink="Qusetions">أسئلة متكررة</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLinkActive="active" routerLink="maps">الخرائط</a>
+          <a class="nav-link diff" [routerLinkActive]="'active'" routerLink="maps">صور</a>
         </li>
 
       </ul>

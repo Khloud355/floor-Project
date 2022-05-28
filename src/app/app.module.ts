@@ -13,6 +13,7 @@ import {AccordionModule} from 'primeng/accordion';
 import { LandForSaleComponent } from './land-for-sale/land-for-sale.component';
 import { MapsComponent } from './maps/maps.component';
 import { FooterComponent } from './footer/footer.component';
+import { PolicyComponent } from './policy/policy.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     DetailsComponent,
     LandForSaleComponent,
     MapsComponent,
-    FooterComponent
+    FooterComponent,
+    PolicyComponent
   ],
   imports: [
     BrowserModule,

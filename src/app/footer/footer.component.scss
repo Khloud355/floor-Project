@@ -1,29 +1,35 @@
-.footer{
-  // height: 4rem;
-  // margin-top: 3rem;
-  // background-color: #eee;
+.footer {
   background-color: #eee;
-  color: green;
-  font-weight: 600;
+  color: #111;
+  // font-weight: 600;
   font-size: 13px;
-  padding: 5rem 2rem 1rem;
+  padding: 3rem 2rem 3rem;
 
   text-align: center;
-  .warn{
-    font-weight: 700;
+  .contact-us{
+    margin-bottom: 0;
   }
-  .uses{
-    ul{
+  .warn {
+  }
+  .uses {
+    ul {
+      padding-left: 0;
       list-style: none;
       display: flex;
-      justify-content: end;
-      li{
-        margin: 1rem;
-a{
-  text-decoration: none;
-  color: #111;
-}}
+      justify-content: center;
+      flex-direction: column;
+      margin-bottom: 0;
+
+      .email {
+        // margin-left: 25.5rem;
+      }
+      li {
+        margin: .5rem 0;
+        a {
+          text-decoration: none;
+          color: #111;
+        }
+      }
     }
   }
-
 }
