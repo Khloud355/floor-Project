@@ -1,31 +1,37 @@
-::ng-deep p-accordion{
- .p-accordion-tab {
-   border-radius: 10px;
+::ng-deep p-accordion {
+  .pi-fw{
+margin-inline-end: 1rem;
+font-size: 12px;
+  }
+  .p-accordion-tab {
+    border-radius: 10px;
     background-color: #eee;
     padding: 1.5rem;
     margin: 1rem;
     .p-accordion-header {
-font-size: 20px;
-a{
-  color: green;
-  font-weight: 600;
-
-}
+      font-size: 20px;
+      a {
+        color: #111;
+        font-size: 15px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+      }
     }
   }
 }
-.qustions{
+.qustions {
   margin-bottom: 8rem;
   margin-top: 5rem;
-  .question-content{
+  .question-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    span{
+    span {
       font-size: 30px;
     }
   }
-  .answer{
+  .answer {
     margin-top: 2rem;
     color: #111;
     font-size: 20px;

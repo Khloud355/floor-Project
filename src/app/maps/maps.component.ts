@@ -11,19 +11,7 @@ export class MapsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.images = [{
-      "img": "../../assets/floor.jpeg"
 
-    },
-    {
-      "img": "../../assets/floor.jpeg"
-
-    }, {
-      "img": "../../assets/floor.jpeg"
-
-    }
-
-  ]
   }
   onNavigateCarousel(page: { page: number }): void {
     this.navigatorPage = page.page;

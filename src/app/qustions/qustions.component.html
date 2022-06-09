@@ -14,41 +14,14 @@
               justify-content: space-between;
             "
           >
-            <div style="white-space:pre-wrap">{{ question.question }}</div>
+            <div style="white-space:pre-wrap" >{{ question.question }}</div>
           </div>
         </ng-template>
         <div class="answer">
-          {{ question.answer }}
+          <div style="font-size: 15px;" name = "description" [innerHTML]="question.answer">
+          </div>
         </div>
       </p-accordionTab>
     </p-accordion>
-    <!-- <h2>GeeksforGeeks</h2>
-    <h5>PrimeNG Accordion component</h5>
-    <p-accordion>
-      <p-accordionTab header="Angular PrimeNG" [selected]="true">
-        <p>
-          Angular PrimeNG is a framework used with angular
-          to create components with great styling and this
-          framework is very easy to use and is used to make
-          responsive websites.
-        </p>
-      </p-accordionTab>
-      <p-accordionTab header="Angular PrimeNG">
-        <p>
-          Angular PrimeNG is a framework used with angular
-          to create components with great styling and this
-          framework is very easy to use and is used to make
-          responsive websites.
-        </p>
-      </p-accordionTab>
-      <p-accordionTab header="Angular PrimeNG">
-        <p>
-          Angular PrimeNG is a framework used with angular
-          to create components with great styling and this
-          framework is very easy to use and is used to make
-          responsive websites.
-        </p>
-      </p-accordionTab>
-    </p-accordion> -->
   </div>
 </div>

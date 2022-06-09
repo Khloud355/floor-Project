@@ -8,16 +8,19 @@ import { PolicyComponent } from './policy/policy.component';
 import { QustionsComponent } from './qustions/qustions.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'Qusetions', component: QustionsComponent },
-  { path: 'floor-details/:id', component: DetailsComponent },
-  { path: 'landForSale', component: LandForSaleComponent },
-  { path: "maps", component: MapsComponent },
-  { path: "policy", component: PolicyComponent }
+  {path:"",redirectTo:"home",pathMatch:"full"},
+  { path: 'home', component: HomeComponent },
+  { path: 'FAQ', component: QustionsComponent },
+  { path: 'details/:id', component: DetailsComponent },
+  { path: '4Sale', component: LandForSaleComponent },
+  { path: "images", component: MapsComponent },
+  { path: "policy", component: PolicyComponent },
+  {path: '**', component: HomeComponent}
+
 ]
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{useHash:false})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

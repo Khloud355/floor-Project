@@ -8,10 +8,10 @@ import { Router } from '@angular/router';
 })
 export class LandForSaleComponent implements OnInit {
   floorData = [
-    { "id": '1', "distance": '2290', "basin_number": '2', "price": '2900' },
-    { "id": '2', "distance": '10500', "basin_number": '18', "price": '2600' },
-    { "id": '3', "distance": '2293', "basin_number": '20', "price": '2999' },
-    { "id": '4', "distance": '2293', "basin_number": '20', "price": '2999' }
+    { "id": '1', "area": '10500', "basin_number": '2', "price": '2000' },
+    { "id": '2', "area": '10500', "basin_number": '18', "price": '2400' },
+    { "id": '3', "area": '10500', "basin_number": '20', "price": '2700' },
+    { "id": '4', "area": '10500', "basin_number": '20', "price": '3000' }
   ]
   price: any;
   array: any = [];
@@ -35,15 +35,15 @@ export class LandForSaleComponent implements OnInit {
   }
   sortBydistance() {
       this.floorData.sort(function (a, b) {
-        return Number(b['distance']) - Number(a['distance']);
+        return Number(b['area']) - Number(a['area']);
       });
   }
   sortBydistancesmall(){
     this.floorData.sort(function (a, b) {
-          return Number(a['distance']) - Number(b['distance']);
+          return Number(a['area']) - Number(b['area']);
         });
   }
   floorDetails(id: any) {
-    this.router.navigate(['floor-details/', id]);
+    this.router.navigate(['details/', id]);
   }
 }

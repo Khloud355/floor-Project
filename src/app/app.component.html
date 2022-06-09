@@ -2,21 +2,27 @@
   <div class="container">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <div class="logo">
-        <img src="../assets/Logo_EGYCASA_4.svg" alt="">
+        <a routerLink="/">
+          <img src="../assets/Logo_EGYCASA_4.svg" alt="">
+        </a>
+
       </div>
       <ul class="navbar-nav mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link main" aria-current="page" routerLink="/">الرئيسية</a>
+          <a class="nav-link main"  aria-current="page" routerLink="/">الرئيسية</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link diff" [routerLinkActive]="'active'" routerLink="landForSale">أراضي للبيع</a>
+          <a class="nav-link diff" [routerLinkActive]="'active'" routerLink="4Sale">أراضي للبيع</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link diff" [routerLinkActive]="'active'" routerLink="Qusetions">أسئلة متكررة</a>
+          <a class="nav-link diff" [routerLinkActive]="'active'" routerLink="FAQ">أسئلة متكررة</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link diff" [routerLinkActive]="'active'" routerLink="maps">صور</a>
-        </li>
+          <a class="nav-link diff" [routerLinkActive]="'active'" routerLink="/policy"> سياسة الخصوصية </a>
+        </li >
+        <!-- <li class="nav-item">
+          <a class="nav-link diff" [routerLinkActive]="'active'" routerLink="images">صور</a>
+        </li> -->
 
       </ul>
     </div>
