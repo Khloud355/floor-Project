@@ -72,7 +72,7 @@ export class QustionsComponent implements OnInit {
         + '<br>' + ''
         + '<br>' + 'روابط ذات صلة'
         + '<br>' + ''
-        + '<br>' + 'http://www.newcities.gov.eg/about/Decisions/dispdec.aspx?ID=274'
+      + '<br>' + '<a>http://www.newcities.gov.eg/about/'+' '+'Decisions/dispdec.aspx?ID=274</a> '
 
 
 

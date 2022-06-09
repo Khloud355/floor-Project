@@ -1,15 +1,20 @@
 .home-section {
-  // padding: 3rem 0;
-  .home-content {
-    // display: flex;
-    width: 100%;
-    // justify-content: space-between;
-    .container {
-      margin-top: 2rem;
+  .container {
+    margin-top: 2rem;
+    .content {
+      width: 100%;
+      padding: 7rem 3rem 3rem 3rem;
+      font-size: 18px;
+      font-weight: 600;
+      @media(max-width:768px){
+        padding: 0 1rem 2rem 1rem;
+        font-size: 15px;
+      }
       .text {
-        // width: 49%;
+        line-height: 40px;
         text-align: justify;
       }
+
       .goals {
         .title {
           font-weight: 700;
@@ -18,19 +23,22 @@
         }
       }
     }
-    .home-carsouel {
-      height: 30rem;
-      .carousel-inner {
-        border-radius: 10px;
-        .carousel-item {
-          position: relative;
-          img {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
+  }
+  .home-carsouel {
+    height: 30rem;
+    .carousel-inner {
+      border-radius: 10px;
+      .carousel-item {
+        position: relative;
+        img {
+          @media (max-width: 768px) {
+            height: 25rem;
           }
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
         }
       }
     }

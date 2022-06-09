@@ -16,12 +16,22 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 flex-direction: row-reverse;
+@media(max-width:768px){
+  display: flex !important;
+}
 }
 
 .navbar {
 
   .logo{
+    @media(max-width:768px){
+      float: left;
+    }
     img{
+      @media(max-width:768px){
+        width: 6rem;
+        height: 4rem;
+      }
       width: 10rem;
       height: 6rem;
       border-radius: 10px;
@@ -32,15 +42,20 @@ flex-direction: row-reverse;
     flex-direction: initial !important;
   }
   background-color: #BDD99E;
-  // background-color: #eee;
   box-shadow: 0 4px 2px -2px #BDD99E;
   height: 7rem;
+  @media(max-width:768px){
+    height: 5rem;
+  }
   font-size: 18px;
   font-weight: 600;
   .main{
     padding-right: 0;
   }
 .diff{
+  @media(max-width: 768px){
+    margin: 0;
+  }
   margin: 0 1rem;
 }
 .nav-link {
@@ -83,8 +98,8 @@ flex-direction: row-reverse;
       color: #111;
       text-decoration: none;
       @media (max-width: 768px) {
-        font-size: 13px;
-        width: 5rem;
+        font-size: 11px;
+        margin: 0 3px;
       }
     }
     .active {
